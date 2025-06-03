@@ -1,0 +1,14 @@
+name: My First Workflow
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1
+        run: echo "ITI"
+      - name: step 2
+        run: echo "ITI"
+      - name: step 3
+        run: echo "ITI"
+      - name: step 4
+        run: echo "ITI"
