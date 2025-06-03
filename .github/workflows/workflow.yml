@@ -1,0 +1,16 @@
+name: Solar system App
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "feature/*"
+jobs:
+  unit-testing:
+    name: My Unit testing
+    strategy:
+      matrix:
+        node_version: [18, 22]
+        operating_system: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.operating_system }}
