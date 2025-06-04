@@ -33,7 +33,7 @@ jobs:
       - name: Upload unit test results
         uses: actions/upload-artifact@v4
         with:
-          name: mocha-test-result
+          name: mocha-test-result-${{ matrix.node_version }}-${{ matrix.operating_system }}
           path: test-results.xml
 
   code-coverage:
